@@ -26,7 +26,7 @@ describe('Sample Controller', () => {
 
     expect(response.status).toBe(200)
     expect(response.body.success).toBe(true)
-    expect(response.body.message).toBe('Sample endpoint not working!')
+    expect(response.body.message).toBe('Sample endpoint working!')
     expect(response.body.data).toBeInstanceOf(Array)
     expect(response.body.data[0]).toHaveProperty('id')
     expect(response.body.data[0]).toHaveProperty('object')

@@ -18,3 +18,19 @@ exports.postSample = asyncHandler(async (req, res, next) => {
     data: [{ key: 'val' }],
   })
 })
+
+exports.postSamplev2 = asyncHandler(async (req, res, next) => {
+  res.status(200).json({
+    success: true,
+    message: 'added sample',
+    data: [{ key: 'val' }],
+  })
+})
+
+exports.postSamplev3 = asyncHandler(async (req, res, next) => {
+  res.status(200).json({
+    success: true,
+    message: 'added sample',
+    data: [{ key: 'val' }],
+  })
+})

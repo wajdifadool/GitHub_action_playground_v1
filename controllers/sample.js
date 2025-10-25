@@ -1,5 +1,13 @@
-const asyncHandler = require('../middleware/async');
+const asyncHandler = require('../middleware/async')
 
 exports.getSample = asyncHandler(async (req, res, next) => {
-  res.status(200).json({ success: true, message: 'Sample endpoint working!' });
-});
+  res.status(200).json({ success: true, message: 'Sample endpoint working!' })
+})
+
+exports.getSamples = asyncHandler(async (req, res, next) => {
+  res.status(200).json({
+    success: true,
+    message: 'Sample endpoint working!',
+    data: [{ id: '00102', object: 'sample data' }],
+  })
+})

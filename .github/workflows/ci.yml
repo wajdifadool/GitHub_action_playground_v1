@@ -29,3 +29,6 @@ jobs:
       # 4. Run tests
       - name: Run tests
         run: npm test
+      # Step 5 — run lint
+      - name: Run lint
+        run: npm run lint
